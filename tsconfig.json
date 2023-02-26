@@ -24,6 +24,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/Components/RainbowPrism/RainbowPrism.js", "src/Components/RainbowPrism/SubComponents/Reflect.js", "src/Components/RainbowPrism/SubComponents/Rainbow.js", "src/Components/RainbowPrism/SubComponents/Prism.js", "src/Components/RainbowPrism/SubComponents/Flare.js", "src/Components/RainbowPrism/SubComponents/Box.js", "src/Components/RainbowPrism/SubComponents/Beam.js"],
   "exclude": ["node_modules"]
 }
