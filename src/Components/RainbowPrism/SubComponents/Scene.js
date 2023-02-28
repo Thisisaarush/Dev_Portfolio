@@ -1,7 +1,6 @@
 import * as THREE from "three";
 import { useRef, useCallback, useState } from "react";
 import { useFrame } from "@react-three/fiber";
-import { Center, Text3D } from "@react-three/drei";
 
 import { Beam } from "./Beam";
 import { Rainbow } from "./Rainbow";
@@ -79,14 +78,18 @@ export const Scene = () => {
 
   useFrame((state) => {
     // Tie beam to the mouse.
-    boxreflect.current.setRay(
-      [
-        (state.pointer.x * state.viewport.width) / 2,
-        (state.pointer.y * state.viewport.height) / 2,
-        0,
-      ],
-      [0, 0, 0]
-    );
+    if (window.innerWidth < 850) {
+      boxreflect.current.setRay([10, -5, 0], [0, 0, 0]);
+    } else {
+      boxreflect.current.setRay(
+        [
+          (state.pointer.x * state.viewport.width) / 2,
+          (state.pointer.y * state.viewport.height) / 2,
+          0,
+        ],
+        [0, 0, 0]
+      );
+    }
 
     // Animate rainbow intensity.
     lerp(
@@ -119,17 +122,17 @@ export const Scene = () => {
       {/* Prism + blocks + reflect beam */}
       <Beam ref={boxreflect} bounce={10} far={20}>
         <Prism
-          scale={0.6}
+          scale={0.7}
           position={[0, -0.5, 0]}
           onRayOver={rayOver}
           onRayOut={rayOut}
           onRayMove={rayMove}
         />
-        <Box position={[-1.4, 1, 0]} rotation={[0, 0, Math.PI / 8]} />
-        <Box position={[-2.4, -1, 0]} rotation={[0, 0, Math.PI / -4]} />
+        {/* <Box position={[-1.4, 1, 0]} rotation={[0, 0, Math.PI / 8]} />
+        <Box position={[-2.4, -1, 0]} rotation={[0, 0, Math.PI / -4]} /> */}
       </Beam>
       {/* Rainbow and flares */}
-      <Rainbow ref={rainbow} startRadius={0} endRadius={0.5} fade={0} />
+      <Rainbow ref={rainbow} startRadius={0} endRadius={0.7} fade={0} />
       <Flare
         ref={flare}
         visible={isPrismHit}

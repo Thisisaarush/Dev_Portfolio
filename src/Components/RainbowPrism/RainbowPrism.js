@@ -50,7 +50,7 @@ const RainbowPrism = () => {
   const [dpr, setDpr] = useState(2);
 
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
+    <div className="w-screen h-screen absolute top-0 left-0 -z-50">
       <Canvas
         dpr={dpr}
         orthographic
