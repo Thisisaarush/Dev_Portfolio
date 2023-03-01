@@ -4,8 +4,8 @@ import "./globals.css";
 import Navigation from "@/Components/Navigation/Navigation";
 
 export const metadata = {
-  title: "Aarush Tanwar",
-  description: "Full Stack Developer Portfolio - Aarush Tanwar",
+  title: "Aarush Tanwar - Full Stack Developer, Designer",
+  description: "Full Stack Developer, Designer Portfolio - Aarush Tanwar",
 };
 
 export default function RootLayout({

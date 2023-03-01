@@ -77,7 +77,7 @@ export const Scene = () => {
   }, []);
 
   useFrame((state) => {
-    // Tie beam to the mouse.
+    // Tie beam to the mouse on desktop only.
     if (window.innerWidth < 850) {
       boxreflect.current.setRay([10, -5, 0], [0, 0, 0]);
     } else {
