@@ -23,12 +23,12 @@ const HeroSection = () => {
       <span className="font-black uppercase text-6xl sm:text-8xl mb-6">
         {title[currentTitle]}
       </span>
-      <span className="capitalize hidden sm:block text-gray-300">
+      {/* <span className="capitalize hidden sm:block text-gray-300">
         Aarush Tanwar - Full Stack Developer located in Jaipur, INDIA
       </span>
       <span className="capitalize hidden sm:block text-gray-300">
         Specialised in building unique and robust web apps
-      </span>
+      </span> */}
     </div>
   );
 };
