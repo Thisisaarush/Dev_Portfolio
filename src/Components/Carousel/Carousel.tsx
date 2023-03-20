@@ -12,15 +12,7 @@ import ng from "../../../public/mockups/ng.png";
 import smartHome from "../../../public/mockups/smartHome.png";
 
 // animation
-const CarouselAnimation = {
-  initial: (direction: number) => {
-    return { x: direction > 0 ? "100%" : "-100%", opacity: 0 };
-  },
-  animate: { x: 0, opacity: 1 },
-  exit: (direction: number) => {
-    return { x: direction < 0 ? "100%" : "-100%", opacity: 0 };
-  },
-};
+import { CarouselAnimation } from "@/animations/animation";
 
 //images data
 const data = [ecomm, food, homeReno, ng, smartHome];
