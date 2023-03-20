@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const ProjectsSection = () => {
   return (
-    <div className="bg-black bg-opacity-90 text-white min-h-screen uppercase">
+    <div className="bg-black bg-opacity-90 text-white uppercase">
       <div className="flex flex-col sm:flex-row max-w-5xl m-auto gap-6 px-4 py-24">
         <span className="w-1/4 text-gray-300 text-xl font-extralight">Achievements</span>
 
