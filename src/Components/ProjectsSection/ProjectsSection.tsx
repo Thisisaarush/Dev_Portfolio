@@ -10,7 +10,7 @@ const ProjectsSection = () => {
   return (
     <div className="bg-black bg-opacity-90 text-white min-h-screen uppercase">
       <div className="flex flex-col sm:flex-row max-w-5xl m-auto gap-6 px-4 py-24">
-        <span className="w-1/4 text-gray-300 text-xl">Achievements</span>
+        <span className="w-1/4 text-gray-300 text-xl font-extralight">Achievements</span>
 
         <div className="flex flex-col text-5xl md:text-7xl">
           <div>
@@ -30,9 +30,9 @@ const ProjectsSection = () => {
       <div className="flex flex-col sm:flex-row">
         <div className="relative h-[800px] md:h-[1000px] sm:w-1/2 overflow-hidden">
           <Link
-            href="/"
+            href="https://shoez-store.vercel.app/"
             target="_blank"
-            className="opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            className="md:opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out"
           >
             <Image
               src={shoe}
@@ -45,7 +45,8 @@ const ProjectsSection = () => {
           <div className="absolute bottom-0 py-8 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full">
             <span className="font-bold text-2xl md:text-3xl">Shoez Store</span>
             <Link
-              href="/"
+              href="https://github.com/Thisisaarush/ShoezStore"
+              target="_blank"
               className="py-1 px-2 text-center font-extralight text-gray-300 hover:underline hover:underline-offset-4 md:text-lg"
             >
               Source Code
@@ -55,9 +56,9 @@ const ProjectsSection = () => {
 
         <div className="relative h-[800px] md:h-[1000px] sm:w-1/2 overflow-hidden">
           <Link
-            href="/"
+            href="https://thisisaarush.github.io/GameHeaven/"
             target="_blank"
-            className="opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            className="md:opacity-60 hover:opacity-100 transition-opacity duration-300 ease-in-out"
           >
             <Image
               src={gaming}
@@ -68,9 +69,12 @@ const ProjectsSection = () => {
             />
           </Link>
           <div className="absolute bottom-0 py-8 left-1/2 -translate-x-1/2 flex flex-col justify-center items-center w-full">
-            <span className="font-bold text-2xl md:text-3xl">Gaming Heaven</span>
+            <span className="font-bold text-2xl md:text-3xl">
+              Gaming Heaven
+            </span>
             <Link
-              href="/"
+              href="https://github.com/Thisisaarush/GameHeaven"
+              target="_blank"
               className="py-1 px-2 text-center font-extralight text-gray-300 hover:underline hover:underline-offset-4 md:text-lg"
             >
               Source Code
