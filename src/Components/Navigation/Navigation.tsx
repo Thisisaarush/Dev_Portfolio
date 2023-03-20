@@ -6,7 +6,7 @@ import Logo from "../../../public/Logo.png";
 
 const Navigation = () => {
   return (
-    <ul className="z-10 text-sm md:text-base py-2 absolute text-white top-4 left-1/2 -translate-x-1/2 transition- duration-150 ease-in-out bg-white bg-opacity-10 rounded-md backdrop-blur-md flex justify-between items-center max-w-5xl w-[95vw] px-8">
+    <ul className="z-10 text-sm md:text-base py-2 absolute text-white top-6 left-1/2 -translate-x-1/2 transition-all duration-150 ease-in-out bg-[#1e1e1e] bg-opacity-90 rounded-md backdrop-blur-md flex justify-between items-center max-w-5xl w-[95vw] px-8">
       <li>
         <Link href="/">
           <Image src={Logo} alt="logo" width={50} height={50} />
